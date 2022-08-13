@@ -4,7 +4,7 @@
 const swiper = new Swiper('.events-slider',{
     direction: 'horizontal',
     loop: true,
-    autoPlay: true,
+    autoplay: true,
      // If we need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -14,6 +14,8 @@ const swiper = new Swiper('.events-slider',{
 const swiper2 = new Swiper('.testimonial-slider',{
     direction: 'horizontal',
     loop: true,
+    autoplay: true,
+
     slidesPerView: 3,
     spaceBetween: 30,
     autoPlay: true,
