@@ -58,6 +58,7 @@ p {
 }
 ul {
   padding-left: 0;
+  margin-bottom: 0;
 }
 button,
 input {
@@ -217,7 +218,7 @@ section {
 @media screen and (max-width: 1023.98px) {
   .header{
     padding: 10px 0;
-    .book-a-table-btn, .navbar{
+    .book-a-table-btn{
       display: none;
     }
 
@@ -230,23 +231,42 @@ section {
     .logo.active{
       opacity: 0;
     }
-    
-    .navbar.active{
-      display: block;
+    .navbar{
+      opacity: 1;
+      transform: translateX(1000px);
+      
       top: 49px;
-      left: 10px;
-      right: 10px;
+      right: 0%;
       position: absolute;
       z-index: 99;
-      height: 100vh;
-      background-color: #fff;
+      height: fit-content;
+      background-color: #000;
+      transition: 0.3s ease;
       gap: 12px;
       border-radius: 4px;
       ul{
         flex-direction: column;
+      }
+    }
+    .navbar.active{
+      opacity: 1;
+      transform: translateX(0px);
+
+      top: 49px;
+      right: 0%;
+      position: absolute;
+      z-index: 99;
+      height: fit-content;
+      background-color: #000;
+      gap: 12px;
+      border-radius: 4px;
+      ul{
+        flex-direction: column;
+        align-items: flex-start;
         li{
           a{
-            color: #000;
+            color: #fff;
+            padding: 10px;
           }
         }
       }
