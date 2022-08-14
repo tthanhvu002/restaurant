@@ -10,6 +10,11 @@ const swiper = new Swiper('.events-slider',{
         el: '.swiper-pagination',
         clickable: true
     },
+    breakpoints: {  
+        '767': {
+          slidesPerView: 1,
+          spaceBetween: 40,},
+      },
 });
 const swiper2 = new Swiper('.testimonial-slider',{
     direction: 'horizontal',
@@ -24,4 +29,23 @@ const swiper2 = new Swiper('.testimonial-slider',{
         el: '.swiper-pagination',
         clickable: true
     },
+    breakpoints: {  
+        '375': {
+          slidesPerView: 1,
+          spaceBetween: 40,},
+        '1023': {
+          slidesPerView: 1,
+          spaceBetween: 50, },
+      },
 });
+
+/* mobile nav */
+
+const mobileNavbar = document.querySelector('.navbar')
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle')
+const header = document.querySelector('.header')
+
+mobileNavToggle.onclick = () => {
+    mobileNavbar.classList.toggle('active')
+    mobileNavToggle.classList.toggle('fa-xmark')
+}
