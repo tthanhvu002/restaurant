@@ -246,16 +246,19 @@ section {
     z-index: 99;
     height: fit-content;
     background-color: #000;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in;
     gap: 12px;
+    padding-left: 40px;
     border-radius: 4px;
   }
   .header .navbar ul {
     flex-direction: column;
   }
   .header .navbar.active {
+    border-top-left-radius: 40px;
     opacity: 1;
     transform: translateX(0px);
+    overflow: hidden;
     top: 49px;
     right: 0%;
     position: absolute;
@@ -263,15 +266,47 @@ section {
     height: fit-content;
     background-color: #000;
     gap: 12px;
-    border-radius: 4px;
+    padding-left: 40px;
   }
   .header .navbar.active ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+    min-height: 100vh;
+    gap: 30px;
   }
   .header .navbar.active ul li a {
+    transform: rotate(45deg);
+    border-bottom: 1px solid #ccc;
     color: #fff;
     padding: 10px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .header .navbar.active {
+    border-top-left-radius: 40px;
+    opacity: 1;
+    transform: translateX(0px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 49px;
+    right: 0%;
+    position: absolute;
+    z-index: 99;
+    height: fit-content;
+    background-color: #000;
+    gap: 12px;
+    padding-left: 40px;
+  }
+  .header .navbar.active ul {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+  }
+  .header .navbar.active ul li a {
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    padding: 10px;
+    transform: rotate(45deg);
   }
 }
 /* HERO SECTION */
