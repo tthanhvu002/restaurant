@@ -49,3 +49,18 @@ mobileNavToggle.onclick = () => {
     mobileNavbar.classList.toggle('active')
     mobileNavToggle.classList.toggle('fa-xmark')
 }
+
+/* glightbox */
+const lightbox = GLightbox({   
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true,
+    element:[
+        {
+        'href': 'https://www.youtube.com/watch?v=GlrxcuEDyF8',
+        'type': 'video',
+        'source': 'youtube', 
+        'width': 900,
+        }
+    ],
+});
