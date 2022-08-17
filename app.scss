@@ -243,12 +243,24 @@ section {
       background-color: #000;
       transition: 0.3s ease-in;
       gap: 12px;
-      border-radius: 100%;
+      border-radius: 50%;
+      border-top-right-radius:0 ;
       ul{
-        justify-content: center;
-        min-height: 100vh;
+        justify-content: flex-start;
         flex-direction: column;
-        margin: 0 auto;
+        align-items: flex-end;
+        min-height: 100vh;
+        gap: 40px;
+        margin-left: auto;
+        li{
+          a{
+            border-bottom: 1px solid #fff;
+            transform: rotate(45deg);
+            color: #fff;
+            padding: 10px;
+            padding-bottom: 5px !important;
+          }
+        }
 
       }
     }
@@ -258,33 +270,21 @@ section {
       overflow: hidden;
       position: absolute;
       z-index: 99;
-      width: 100%;
+      width: 20%;
       height: 100vh;
       background-color: #000;
       gap: 12px;
       border-radius: 0;
-      ul{
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        gap: 30px;
-        margin: 0 auto;
-        li{
-          a{
-
-            color: #fff;
-            padding: 10px;
-          }
-        }
-      }
+      border-top-left-radius: 50px;
     }
   }
 }
 
 @media screen and (max-width: 767.98px) {
   .header {
-    
+    .navbar.active{
+      width: 40%;
+    }
   }
 }
 
@@ -430,7 +430,7 @@ section {
 /* ABOUT SECTION */
 
 .about {
-  background: url(../../../assets/img/about-bg.jpg) center center;
+  background: url(./img/about-bg.jpg) center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;

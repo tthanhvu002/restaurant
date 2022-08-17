@@ -64,3 +64,15 @@ const lightbox = GLightbox({
         }
     ],
 });
+
+/* close header when click outside */
+document.addEventListener('click', function(e) {
+    var container = document.querySelector('.navbar');
+    
+    if (!container.contains(e.target) && !e.target.contains(mobileNavToggle)) {
+        container.classList.remove('active')
+    mobileNavToggle.classList.remove('fa-xmark')
+
+    }  
+    
+});
