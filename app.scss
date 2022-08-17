@@ -1029,7 +1029,9 @@ section {
 .footer {
   font-size: 14px;
   color: #fff;
-
+  .row{
+    justify-content: center;
+  }
   .copyright {
     text-align: center;
     padding-top: 30px;
@@ -1134,6 +1136,16 @@ section {
     }
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .footer{
+    .col-lg-3, .col-lg-2, .col-lg-4{
+      text-align: center;
+      margin: 10px;
+    }
+  }
+}
+
 /* FOOTER END */
 
 /* responsive */
