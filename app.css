@@ -409,10 +409,12 @@ section {
   }
   50% {
     background-color: rgba(255, 166, 0, 0.79);
+    border-radius: 100%;
   }
   100% {
     transform: scale(2);
     background-color: rgba(13, 202, 240, 0.3490196078);
+    border-radius: 100%;
   }
 }
 @media screen and (max-width: 1023.98px) {
