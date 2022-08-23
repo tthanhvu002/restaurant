@@ -363,28 +363,7 @@ section {
   display: block;
   position: relative;
   overflow: hidden;
-}
-.hero .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(205, 164, 94, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
+  animation: 0.2s ease infinite;
 }
 .hero .play-btn::after {
   content: "";
@@ -403,7 +382,6 @@ section {
 
 @keyframes pulsate-btn {
   0% {
-    transform: scale(0.5);
     background-color: rgba(0, 128, 0, 0.635);
     border-radius: 100%;
   }
@@ -412,7 +390,6 @@ section {
     border-radius: 100%;
   }
   100% {
-    transform: scale(2);
     background-color: rgba(13, 202, 240, 0.3490196078);
     border-radius: 100%;
   }
