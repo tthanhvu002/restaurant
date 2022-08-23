@@ -216,7 +216,7 @@ section {
 .header .navbar .nav-link {
   font-size: 14px;
   color: #fff;
-  padding: 10px 10px 30px;
+  padding: 10px 10px 10px;
 }
 .header .navbar .nav-link.active {
   color: #d9ba85;
