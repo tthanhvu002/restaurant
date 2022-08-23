@@ -367,7 +367,7 @@ section {
     display: block;
     position: relative;
     overflow: hidden;
-    animation: 0.2s ease infinite;
+    animation: pulsate-btn 1.5s ease infinite;
     &::after {
       content: "";
       position: absolute;
